@@ -21,15 +21,15 @@
 ## TL;DR
 
 <p align="center">
-  <img src="figures/overview.png" width="80%">
+  <img src="figures/overview.png" width="75%">
 </p>
 
 <p align="center">
-  <img src="figures/overview-2.png" width="80%">
+  <img src="figures/overview-2.png" width="75%">
 </p>
 
 <p align="center">
-  <img src="figures/overview-3.png" width="80%">
+  <img src="figures/overview-3.png" width="75%%">
 </p>
 
 We study **counterfactual world models (CWMs)** and introduce the policy gradient estimator **REINFORCE Look Back (RLB)**, enabling low-variance reinforcement learning in complex, stochastic environments through experience-conditioned counterfactual baselines.
