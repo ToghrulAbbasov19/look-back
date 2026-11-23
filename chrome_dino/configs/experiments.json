@@ -1,0 +1,73 @@
+{
+  "world_model_dataset": {
+    "episodes": 1000,
+    "decisions_per_episode": 150,
+    "action_repeat": 4,
+    "seed": 0,
+    "filler_probability": 0.7,
+    "deviation_probability": 0.3,
+    "bird_spawn_probability": 0.6,
+    "bird_minimum_speed": 20,
+    "middle_bird_weight": 2
+  },
+  "factual_dataset": {
+    "episodes": 1000,
+    "decisions_per_episode": 150,
+    "action_repeat": 4,
+    "seed": 1,
+    "same_generation_settings_as_world_model_dataset": true
+  },
+  "world_model": {
+    "seed": 0,
+    "context_frames": 8,
+    "training_steps": 9000,
+    "learning_rate": 0.0002,
+    "effective_batch_size": 32,
+    "action_dropout_probability": 0.2,
+    "collision_repeat": 2,
+    "ema_decay": 0.9999,
+    "inference_steps": 10,
+    "cfg_scale": 1.0
+  },
+  "policy": {
+    "training_updates": 2000,
+    "groups_per_update": 8,
+    "rollouts_per_group": 4,
+    "rollout_decisions": 20,
+    "action_repeat": 4,
+    "learning_rate": 0.001,
+    "value_learning_rate": 0.03,
+    "discount": 0.99,
+    "entropy_coefficient": 0.04,
+    "maximum_gradient_norm": 20.0,
+    "ttc_interval": "(8,12]",
+    "speed_bins": [
+      [21, 26],
+      [27, 31],
+      [32, 37],
+      [38, 43]
+    ],
+    "bird_spawn_probability": 0.6,
+    "bird_minimum_speed": 20,
+    "middle_bird_weight": 2
+  },
+  "evaluation": {
+    "checkpoint_interval": 100,
+    "validation_episodes_per_seed": 30,
+    "validation_first_seed": 2200000000,
+    "test_episodes_per_seed": 100,
+    "test_first_seed": 2300000000,
+    "episode_cap_decisions": 375
+  },
+  "world_model_evaluation": {
+    "samples": 1000,
+    "seed": 20260924,
+    "inference_steps": 10,
+    "evaluator_train_per_class": 3000,
+    "evaluator_valid_per_class": 1000,
+    "predictor_epochs": 5,
+    "vae_epochs": 8,
+    "vae_latent_dimension": 32,
+    "vae_beta": 0.0001
+  }
+}
