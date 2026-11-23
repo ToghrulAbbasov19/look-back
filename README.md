@@ -32,7 +32,7 @@
   <img src="figures/overview-3.png" width="100%">
 </p>
 
-We study counterfactual world models (CWMs) and introduce the policy gradient estimator REINFORCE Look Back (RLB), enabling low-variance reinforcement learning in complex, stochastic environments through experience-conditioned counterfactual baselines.
+We study **counterfactual world models (CWMs)** and introduce the policy gradient estimator **REINFORCE Look Back (RLB)**, enabling low-variance reinforcement learning in complex, stochastic environments through experience-conditioned counterfactual baselines.
 
 ## Overview
 
