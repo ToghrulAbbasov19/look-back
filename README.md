@@ -36,7 +36,7 @@ We study **counterfactual world models (CWMs)** and introduce the policy gradien
 
 ## Overview
 
-**REINFORCE Look Back (RLB)** applies common random numbers to policy gradients by comparing a group of rollouts that start from the same state and share the same environment randomness. Unlike RLOO, which draws fresh randomness for every rollout, the rollouts in an RLB group differ only in the actions taken, so the leave-one-out baseline removes the environment noise from the comparison. This noise is a major source of variance when outcomes depend on randomness the agent cannot see. We extend this to **RLB + CWM**, where a counterfactual world model (CWM) replays the randomness of one real rollout under other actions, so it needs fewer environment interactions.
+**RLB** applies common random numbers to policy gradients by comparing a group of rollouts that start from the same state and share the same environment randomness. Unlike RLOO, which draws fresh randomness for every rollout, the rollouts in an RLB group differ only in the actions taken, so the leave-one-out baseline removes the environment noise from the comparison. This noise is a major source of variance when outcomes depend on randomness the agent cannot see. We extend this to **RLB + CWM**, where a **CWM** replays the randomness of one real rollout under other actions, so it needs fewer environment interactions.
 
 This repository contains the code for the main experiments in the paper: Chrome Dino with a diffusion world model ([`chrome_dino/`](chrome_dino)), a contextual bandit ([`contextual_bandit/`](contextual_bandit)), and a multi-agent bandit ([`multiagent_bandit/`](multiagent_bandit)). The codebase has been tested with NVIDIA RTX 3090 GPUs.
 
