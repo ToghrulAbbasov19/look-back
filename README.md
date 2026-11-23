@@ -18,6 +18,12 @@
 
 </div>
 
+## TL;DR
+
+<p align="center">
+  <img src="figures/overview.png" width="100%">
+</p>
+
 ## Overview
 
 **REINFORCE Look Back (RLB)** applies common random numbers to policy gradients by comparing a group of rollouts that start from the same state and share the same environment randomness. Unlike RLOO, which draws fresh randomness for every rollout, the rollouts in an RLB group differ only in the actions taken, so the leave-one-out baseline removes the environment noise from the comparison. This noise is a major source of variance when outcomes depend on randomness the agent cannot see. We extend this to **RLB + CWM**, where a counterfactual world model (CWM) replays the randomness of one real rollout under other actions, so it needs fewer environment interactions.
