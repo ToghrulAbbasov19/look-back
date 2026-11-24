@@ -202,7 +202,15 @@ The bandit experiments are deterministic, so rerunning them on the same setup gi
 ## Citation
 
 ```bibtex
-bibtex here
+@article{kim2026look,
+    title={Look Back: Reinforcement Learning with Counterfactual World Models},
+    author={Jinwoo Kim and Toghrul Abbasov
+            and Lucius E.J. Bynum and Aahlad Puli and Stephanie Milani
+            and Hyunwoo Ryu and Seunghoon Hong
+            and Kyunghyun Cho and Rajesh Ranganath},
+    journal={arXiv preprint arXiv:2611.29259},
+    year={2026},
+}
 ```
 
 ## Acknowledgements
