@@ -14,7 +14,7 @@
 
 <div align="center">
 
-[![arXiv](https://img.shields.io/badge/arXiv-ADD_ID-b31b1b?style=flat&logo=arxiv)](https://arxiv.org/abs/ADD_ID)
+[![arXiv](https://img.shields.io/badge/arXiv-2611.29259-b31b1b?style=flat&logo=arxiv)](https://arxiv.org/abs/2611.29259)
 
 </div>
 
